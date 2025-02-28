@@ -13,7 +13,7 @@ type DataValidationProps = {
 }
 
 export function DataValidation({ selectedCell, onApplyValidation }: DataValidationProps) {
-  const [validationType, setValidationType] = useState<"text" | "number" | "date" | "list">("text")
+  const [validationType, setValidationType] = useState<"text" | "number" | "date" | "list"|"auto">("text")
   const [minValue, setMinValue] = useState("")
   const [maxValue, setMaxValue] = useState("")
   const [listValues, setListValues] = useState("")
